@@ -2,7 +2,6 @@ var profiles = document.getElementsByClassName('ProfileHeaderCard-bio u-dir');
 var blocked = document.getElementsByClassName('user-actions btn-group not-muting blocked')[0];
 
 if (profiles.length === 1 && !blocked) {
-  console.log(profiles[0].textContent);
   if (profiles[0].textContent.toLowerCase().includes('futurist')) {
     var authToken = document.getElementsByName('authenticity_token')[0].value;
     var userId = document.getElementsByClassName('ProfileNav')[0].getAttribute('data-user-id');
