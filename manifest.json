@@ -1,0 +1,14 @@
+{
+  "name": "Twitter blocker",
+  "author": "hgkshin",
+  "version": "1.0",
+  "description": "Blocks Twitter users with 'Futurist' in their profiles",
+  "content_scripts": [{
+    "matches": ["https://*.twitter.com/*", "https://twitter.com/*"],
+    "js":      ["background.js"]
+  }],
+   "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 2
+}
